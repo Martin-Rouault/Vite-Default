@@ -1,10 +1,10 @@
-export default function Dish({ slug, description, prix, image, stock }) {
+export default function Dish({ name, description, prix, image }) {
     return (
-        <div key={slug}>
+        <div>
+            <p>{name}</p>
             <p>{description}</p>
             <p>{prix}</p>
             <img src={image}></img>
-            <p>{stock}</p>
         </div>
     );
 }
