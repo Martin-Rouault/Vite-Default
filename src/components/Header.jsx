@@ -1,8 +1,8 @@
 export default function Header() {
     return (
-        <header className="nav">
+        <nav>
             <img src="/logo.webp" alt="" />
             <a href="#">Home</a>
-        </header>
+        </nav>
     );
 }
