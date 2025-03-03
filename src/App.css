@@ -1,14 +1,3 @@
-nav {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav img {
-    width: 64px;
-}
-
 footer {
     position: fixed;
     bottom: 0;
