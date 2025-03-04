@@ -1,6 +1,7 @@
+import "../assets/style/dish.scss";
+
 import { Badge, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
 
 export default function Dish({ name, prix, image, isNew }) {
     function addToCart(name) {
