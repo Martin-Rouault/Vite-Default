@@ -32,7 +32,7 @@ export default function Home() {
             description:
                 "Découvrez la richesse de la cuisine mexicaine avec notre mole poblano. Cette sauce complexe et riche en saveurs est préparée avec une combinaison d'épices, de chocolat et de piments, offrant une expérience culinaire unique et exquise.",
             price: "15",
-            image: "src/assets/img//mexican.jpg",
+            image: "src/assets/img//mole.jpg",
             slug: "mole-poblano",
             stock: "5",
             isNew: false,
@@ -59,7 +59,7 @@ export default function Home() {
                 </Button>
                 <Row>
                     {filteredDishes.map(({ name, price, image, isNew }) => (
-                        <Col key={name} md={5} lg={4} className="mb-4">
+                        <Col key={name} md={4} className="mb-4">
                             <Dish
                                 name={name}
                                 prix={price}

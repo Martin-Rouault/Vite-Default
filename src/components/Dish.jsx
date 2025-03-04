@@ -8,7 +8,7 @@ export default function Dish({ name, prix, image, isNew }) {
         alert(`Le plat ${name} a bien été ajouté à votre panier`);
     }
     return (
-        <Card style={{ width: "18rem" }}>
+        <Card >
             <Card.Img variant="top" src={image} className="dish-img" />
             {isNew && (
                 <Badge bg="primary" className="badge">
