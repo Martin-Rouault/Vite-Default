@@ -11,7 +11,7 @@ export default function Home() {
             name: "Tacos",
             description:
                 "Savourez l'authenticité mexicaine avec notre délicieux tacos à l'unité. Garni de viande grillée, de légumes frais et de sauce maison, chaque bouchée vous transporte directement au cœur du Mexique.",
-            price: "3€",
+            price: "3",
             image: "src/assets/img/tacos.jpg",
             slug: "tacos-a-l-unite",
             stock: "12",
@@ -47,16 +47,11 @@ export default function Home() {
 
     console.log(showNewOnly);
 
-    const filteredDishes = dishes.filter(() => !showNewOnly);
+    const filteredDishes = dishes.filter((dish) => dish.stock > 0);
 
     return (
         <main>
             <Container className="main-container">
-                <Button variant="primary mb-5" onClick={handleShowNewOnly}>
-                    {showNewOnly
-                        ? "Voir tous les plats"
-                        : "Nouveautés uniquement"}
-                </Button>
                 <Row>
                     {filteredDishes.map(({ name, price, image, isNew }) => (
                         <Col key={name} md={4} className="mb-4">
