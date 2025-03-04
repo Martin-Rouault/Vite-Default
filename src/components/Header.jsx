@@ -10,7 +10,7 @@ export default function Header() {
             <Navbar className="nav toggle" expand="md">
                 <Container className="d-flex justify-content-between align-items-center">
                     <Navbar.Brand href="#home">
-                        <img src="/logo.webp" className="brand" alt="" />
+                        <img src="../src/assets/img/logo.webp" className="brand" alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
