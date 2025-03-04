@@ -9,14 +9,12 @@ export default function Dish({ name, prix, image, isNew }) {
     }
     return (
         <Card style={{ width: "18rem" }}>
-            {isNew ? (
+            <Card.Img variant="top" src={image} className="dish-img" />
+            {isNew && (
                 <Badge bg="primary" className="badge">
                     Nouveau
                 </Badge>
-            ) : (
-                ""
             )}
-            <Card.Img variant="top" src={image} className="dish-img" />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>{prix}€</Card.Text>

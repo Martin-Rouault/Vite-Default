@@ -28,13 +28,33 @@ export default function Home() {
             isNew: false,
         },
         {
-            name: "Mole Poblano",
+            name: "Enchilidas",
             description:
-                "Découvrez la richesse de la cuisine mexicaine avec notre mole poblano. Cette sauce complexe et riche en saveurs est préparée avec une combinaison d'épices, de chocolat et de piments, offrant une expérience culinaire unique et exquise.",
-            price: "15",
-            image: "src/assets/img//mole.jpg",
-            slug: "mole-poblano",
-            stock: "5",
+                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
+            price: "12",
+            image: "src/assets/img//mexican.jpg",
+            slug: "enchiladas",
+            stock: "0",
+            isNew: false,
+        },
+        {
+            name: "Enchilidas",
+            description:
+                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
+            price: "12",
+            image: "src/assets/img//mexican.jpg",
+            slug: "enchiladas",
+            stock: "0",
+            isNew: false,
+        },
+        {
+            name: "Enchilidas",
+            description:
+                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
+            price: "12",
+            image: "src/assets/img//mexican.jpg",
+            slug: "enchiladas",
+            stock: "0",
             isNew: false,
         },
     ];
@@ -57,9 +77,9 @@ export default function Home() {
                         ? "Voir tous les plats"
                         : "Nouveautés uniquement"}
                 </Button>
-                <Row className="g-4">
+                <Row>
                     {filteredDishes.map(({ name, price, image, isNew }) => (
-                        <Col key={name} className="mb-4">
+                        <Col key={name} md={5} lg={4} className="mb-4">
                             <Dish
                                 name={name}
                                 prix={price}
