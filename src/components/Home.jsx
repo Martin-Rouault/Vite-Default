@@ -32,7 +32,7 @@ export default function Home() {
             description:
                 "Découvrez la richesse de la cuisine mexicaine avec notre mole poblano. Cette sauce complexe et riche en saveurs est préparée avec une combinaison d'épices, de chocolat et de piments, offrant une expérience culinaire unique et exquise.",
             price: "15",
-            image: "/tacos.jpg",
+            image: "src/assets/img//mexican.jpg",
             slug: "mole-poblano",
             stock: "5",
             isNew: false,
