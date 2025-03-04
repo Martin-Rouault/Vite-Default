@@ -14,7 +14,7 @@ export default function Home() {
             price: "3",
             image: "src/assets/img/tacos.jpg",
             slug: "tacos-a-l-unite",
-            stock: "12",
+            stock: 12,
             isNew: true,
         },
         {
@@ -24,7 +24,7 @@ export default function Home() {
             price: "12",
             image: "src/assets/img//mexican.jpg",
             slug: "enchiladas",
-            stock: "0",
+            stock: 0,
             isNew: false,
         },
         {
@@ -34,7 +34,7 @@ export default function Home() {
             price: "15",
             image: "src/assets/img//mole.jpg",
             slug: "mole-poblano",
-            stock: "5",
+            stock: 5,
             isNew: false,
         },
     ];
