@@ -47,11 +47,18 @@ export default function Home() {
 
     console.log(showNewOnly);
 
-    const filteredDishes = dishes.filter((dish) => dish.stock > 0);
+    const filteredDishes = dishes.filter(
+        (dish) => dish.stock > 0 && (!showNewOnly || dish.isNew)
+    );
 
     return (
         <main>
             <Container className="main-container">
+                <Button variant="primary mb-5" onClick={handleShowNewOnly}>
+                    {showNewOnly
+                        ? "Voir tous les plats"
+                        : "Nouveautés uniquement"}
+                </Button>
                 <Row>
                     {filteredDishes.map(({ name, price, image, isNew }) => (
                         <Col key={name} md={4} className="mb-4">
