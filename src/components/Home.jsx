@@ -28,33 +28,13 @@ export default function Home() {
             isNew: false,
         },
         {
-            name: "Enchilidas",
+            name: "Mole Poblano",
             description:
-                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
-            price: "12",
-            image: "src/assets/img//mexican.jpg",
-            slug: "enchiladas",
-            stock: "0",
-            isNew: false,
-        },
-        {
-            name: "Enchilidas",
-            description:
-                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
-            price: "12",
-            image: "src/assets/img//mexican.jpg",
-            slug: "enchiladas",
-            stock: "0",
-            isNew: false,
-        },
-        {
-            name: "Enchilidas",
-            description:
-                "Nos enchiladas sont un festin de saveurs, avec des tortillas de maïs enroulées autour d'une garniture généreuse de viande, de fromage fondu et de sauce tomate épicée. Chaque bouchée est une explosion de goût qui vous fera revenir pour plus.",
-            price: "12",
-            image: "src/assets/img//mexican.jpg",
-            slug: "enchiladas",
-            stock: "0",
+                "Découvrez la richesse de la cuisine mexicaine avec notre mole poblano. Cette sauce complexe et riche en saveurs est préparée avec une combinaison d'épices, de chocolat et de piments, offrant une expérience culinaire unique et exquise.",
+            price: "15",
+            image: "/tacos.jpg",
+            slug: "mole-poblano",
+            stock: "5",
             isNew: false,
         },
     ];
