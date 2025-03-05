@@ -12,6 +12,8 @@ import { Button } from "react-bootstrap";
 export default function Header() {
     const { cartCount } = useContext(CartContext);
 
+    console.log(cartCount)
+
     return (
         <header>
             <Navbar className="nav toggle" expand="md">

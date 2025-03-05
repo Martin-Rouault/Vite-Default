@@ -7,7 +7,7 @@ import { Badge, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 export default function Dish({ name, prix, image, isNew }) {
-    const { addToCart } = useContext(CartContext);
+    const { dispatch } = useContext(CartContext);
 
     return (
         <Card>
@@ -20,8 +20,18 @@ export default function Dish({ name, prix, image, isNew }) {
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>{prix}€</Card.Text>
-                <Button variant="secondary" onClick={() => addToCart()}>
+                <Button
+                    variant="secondary"
+                    onClick={() => dispatch({ type: "increment" })}
+                    className="m-2"
+                >
                     Ajouter au panier
+                </Button>
+                <Button
+                    variant="danger"
+                    onClick={() => dispatch({ type: "decrement" })}
+                >
+                    Retirer du panier
                 </Button>
             </Card.Body>
         </Card>
