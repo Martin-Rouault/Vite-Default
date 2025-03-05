@@ -5,7 +5,7 @@ import Dish from "./Dish";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-export default function Home({ addToCart }) {
+export default function Home() {
     const dishes = [
         {
             name: "Tacos",
@@ -67,7 +67,6 @@ export default function Home({ addToCart }) {
                                 prix={price}
                                 image={image}
                                 isNew={isNew}
-                                addToCart={addToCart}
                             />
                         </Col>
                     ))}

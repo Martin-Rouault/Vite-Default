@@ -1,9 +1,14 @@
+import { useContext } from "react";
+import CartContext from "../context/CartContext";
+
 import "../assets/style/dish.scss";
 
 import { Badge, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
-export default function Dish({ name, prix, image, isNew, addToCart }) {
+export default function Dish({ name, prix, image, isNew }) {
+    const { addToCart } = useContext(CartContext);
+
     return (
         <Card>
             <Card.Img variant="top" src={image} className="dish-img" />

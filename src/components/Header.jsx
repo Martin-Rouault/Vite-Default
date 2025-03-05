@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import CartContext from "../context/CartContext";
+
 import "../assets/style/header.scss";
 import logo from "../assets/img/logo.webp";
 
@@ -6,7 +9,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Button } from "react-bootstrap";
 
-export default function Header({ cartCount }) {
+export default function Header() {
+    const { cartCount } = useContext(CartContext);
+
     return (
         <header>
             <Navbar className="nav toggle" expand="md">
