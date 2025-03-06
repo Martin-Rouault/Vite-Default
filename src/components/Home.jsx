@@ -5,7 +5,7 @@ import Dish from "./Dish";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-export default function Home() {
+export default function Home({ cartCount, prevCountRef }) {
     const dishes = [
         {
             name: "Tacos",
@@ -54,11 +54,17 @@ export default function Home() {
     return (
         <main>
             <Container className="main-container">
-                <Button variant="primary mb-5" onClick={handleShowNewOnly}>
-                    {showNewOnly
-                        ? "Voir tous les plats"
-                        : "Nouveautés uniquement"}
-                </Button>
+                <Container className="buttons">
+                    <Button variant="primary mb-5" onClick={handleShowNewOnly}>
+                        {showNewOnly
+                            ? "Voir tous les plats"
+                            : "Nouveautés uniquement"}
+                    </Button>
+                    <p variant="warning">
+                        Le panier est passé de {prevCountRef.current} à {" "}
+                        {cartCount}
+                    </p>
+                </Container>
                 <Row>
                     {filteredDishes.map(({ name, price, image, isNew }) => (
                         <Col key={name} md={4} className="mb-4">
